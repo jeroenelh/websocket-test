@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    # Tell PHP that the mod_rewrite module is ENABLED.
+    SetEnv HTTP_MOD_REWRITE On
+
+    # Initiates mod_rewrite
+    RewriteEngine on
+    RewriteBase /
+
+    # Store the current location in an environment variable CWD
+    RewriteCond $0#%{REQUEST_URI} ([^#]*)#(.*)\1$
+    RewriteRule ^.*$ - [E=CWD:%2]
+
+    # All requests are redirected to the index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*) %{ENV:CWD}index.php [L,QSA]
+</IfModule>

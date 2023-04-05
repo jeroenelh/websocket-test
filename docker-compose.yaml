@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  php:
+    image: garrcomm/php-apache-composer:latest
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
+      ENVIRONMENT: development
+    volumes:
+      - ".:/var/www/html:cached"
+    ports:
+      - 82:80
+

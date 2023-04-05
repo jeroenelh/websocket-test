@@ -1,0 +1,261 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "750e13d945274a8c47f1630836b705f9",
+    "packages": [
+        {
+            "name": "clue/socket-raw",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/socket-raw.git",
+                "reference": "91e9f619f6769f931454a9882c21ffd7623d06cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/socket-raw/zipball/91e9f619f6769f931454a9882c21ffd7623d06cb",
+                "reference": "91e9f619f6769f931454a9882c21ffd7623d06cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sockets": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Socket\\Raw\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "Simple and lightweight OOP wrapper for PHP's low-level sockets extension (ext-sockets).",
+            "homepage": "https://github.com/clue/socket-raw",
+            "keywords": [
+                "Socket",
+                "client",
+                "datagram",
+                "dgram",
+                "icmp",
+                "ipv6",
+                "server",
+                "stream",
+                "tcp",
+                "udg",
+                "udp",
+                "unix"
+            ],
+            "support": {
+                "issues": "https://github.com/clue/socket-raw/issues",
+                "source": "https://github.com/clue/socket-raw/tree/v1.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-04-14T14:58:06+00:00"
+        },
+        {
+            "name": "miniframe/core",
+            "version": "v1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/miniframe/core.git",
+                "reference": "533aa37f6d37a1ce61878dbf175c59208b58eb02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/miniframe/core/get/533aa37f6d37a1ce61878dbf175c59208b58eb02.zip",
+                "reference": "533aa37f6d37a1ce61878dbf175c59208b58eb02",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "garrcomm/phpunit-helpers": "v1.x-dev",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.4",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Miniframe\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-SA-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Thoolen",
+                    "email": "mail@stefanthoolen.nl",
+                    "homepage": "https://www.stefanthoolen.nl/"
+                }
+            ],
+            "description": "Core package of the Miniframe PHP Framework",
+            "homepage": "https://miniframe.dev/",
+            "keywords": [
+                "framework"
+            ],
+            "support": {
+                "source": "https://bitbucket.org/miniframe/core/src/533aa37f6d37a1ce61878dbf175c59208b58eb02/?at=v1"
+            },
+            "time": "2022-11-25T19:26:56+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "miniframe/developer-toolbar",
+            "version": "v1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/miniframe/developer-toolbar.git",
+                "reference": "106b8249694dfd76d0b7637d9a31278291028a36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/miniframe/developer-toolbar/get/106b8249694dfd76d0b7637d9a31278291028a36.zip",
+                "reference": "106b8249694dfd76d0b7637d9a31278291028a36",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "miniframe/core": "^1.0",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "garrcomm/phpunit-helpers": "v1.x-dev",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.4",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Miniframe\\Toolbar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-SA-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Thoolen",
+                    "email": "mail@stefanthoolen.nl",
+                    "homepage": "https://www.stefanthoolen.nl/"
+                }
+            ],
+            "description": "Developer toolbar for the Miniframe PHP Framework",
+            "homepage": "https://miniframe.dev/",
+            "support": {
+                "source": "https://bitbucket.org/miniframe/developer-toolbar/src/106b8249694dfd76d0b7637d9a31278291028a36/?at=v1"
+            },
+            "time": "2022-11-25T19:42:53+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2023-02-22T23:07:41+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "miniframe/core": 20,
+        "miniframe/developer-toolbar": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.3",
+        "ext-mysqli": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "ext-sockets": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
