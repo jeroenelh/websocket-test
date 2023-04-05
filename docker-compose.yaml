@@ -9,5 +9,6 @@ services:
     volumes:
       - ".:/var/www/html:cached"
     ports:
-      - 82:80
+      - "83:80"
+      - "8181:8181"
 

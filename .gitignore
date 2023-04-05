@@ -1,0 +1,11 @@
+/.idea/
+/.composer/
+/.vscode/
+vendor/
+/cache/
+/logs/
+/config/secrets.ini
+/config/development.ini
+/config/production.ini
+/public/phonestatus_dont_remove.txt
+/private/fonts.json
